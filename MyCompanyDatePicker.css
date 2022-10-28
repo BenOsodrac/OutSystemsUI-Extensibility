@@ -1,0 +1,89 @@
+/* MyCompanyDatePicker*/
+.my-company-picker input.form-control[data-input] {
+    background-color: var(--color-neutral-0);
+    border: var(--border-size-s) solid var(--color-neutral-6);
+    border-radius: var(--border-radius-1);
+    color: var(--color-neutral-10);
+}
+
+.my-company-picker input.form-control[data-input].active {
+    border-color: var(--color-primary);
+}
+
+.my-company-picker.flatpickr-calendar:before, 
+.my-company-picker.flatpickr-calendar:after {
+    display: none;
+}
+
+.my-company-picker.flatpickr-calendar {
+    background-color: var(--color-neutral-2);
+    border: none;
+    border-radius: var(--border-radius-2);
+    box-shadow: var(--shadow-1);
+    margin-top: var(--space-xs);
+}
+
+.my-company-picker .flatpickr-day.today:hover, 
+.my-company-picker .flatpickr-day.today:focus,
+.my-company-picker.flatpickr-calendar * {
+    color: var(--color-neutral-10);
+}
+
+.my-company-picker .picker-footer *:not(button){
+    color: var(--color-neutral-7);
+}
+
+.my-company-picker .flatpickr-day,
+.my-company-picker .flatpickr-day.selected.startRange, 
+.my-company-picker .flatpickr-day.startRange.startRange, 
+.my-company-picker .flatpickr-day.endRange.startRange,
+.my-company-picker .flatpickr-day.selected.endRange, 
+.my-company-picker .flatpickr-day.startRange.endRange, 
+.my-company-picker .flatpickr-day.endRange.endRange{ 
+    border-radius: var(--border-radius-1);
+}
+
+.my-company-picker .flatpickr-day:not(.today) {
+    border: none;
+}
+
+.my-company-picker input.form-control[data-input] {
+    width: 250px;
+}
+
+.my-company-picker .picker-footer {
+    align-items: center;
+    border-top: 1px solid var(--color-neutral-5);
+    display: grid;
+    font-size: var(--font-size-xs);
+    gap: var(--space-base);
+    grid-template-columns: 2fr auto auto;
+    margin: 0 var(--space-base) var(--space-base);
+    padding-top: var(--space-base);
+    text-align: left;
+}
+
+.my-company-picker .picker-footer .btn + .btn {
+    margin-left: 0;
+}
+
+.my-company-picker .picker-footer button.btn {
+    border: none;
+    padding: var(--space-xs) var(--space-base) 
+}
+
+.my-company-picker .flatpickr-day.inRange:before {
+    left: -10px;
+    right: -10px;
+}
+
+.my-company-picker .flatpickr-day.selected.startRange:before, 
+.my-company-picker .flatpickr-day.startRange.startRange:before, 
+.my-company-picker .flatpickr-day.endRange.startRange:before, 
+.my-company-picker .flatpickr-day.selected.endRange:before, 
+.my-company-picker .flatpickr-day.startRange.endRange:before, 
+.my-company-picker .flatpickr-day.endRange.endRange:before, 
+.my-company-picker .flatpickr-day.inRange:before {
+    bottom:0;
+    top: 0;
+}
